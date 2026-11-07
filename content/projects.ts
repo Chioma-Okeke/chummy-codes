@@ -177,40 +177,54 @@ export async function middleware(req: NextRequest) {
     },
   },
   {
-    slug: "nimasa-clearance-system",
-    title: "NIMASA Clearance System",
-    category: "engineering",
-    label: "Software Engineering",
+    slug: "agenttrust",
+    title: "AgentTrust",
+    category: "security",
+    label: "AI Security · PayPal AI Hackathon",
+    subtitle: "Trust before a transaction.",
     summary:
-      "Online approval workflows with role-based dashboards that replaced a manual intern clearance process, with digital signatures, tracking, and letter printing.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    icon: "file-check",
+      "An AI-agent security and governance platform in development for the PayPal AI Hackathon, focused on monitoring financial actions and enforcing spending and authorization policies before execution.",
+    stack: ["AI Agents", "Spending Controls", "Authorization Policies"],
+    icon: "fingerprint",
     imageTone: "blush",
     caseStudy: {
       facts: [
-        { label: "Stack", value: "Next.js, TypeScript, Tailwind CSS" },
-        { label: "Features", value: "Digital Signatures, Tracking" },
-        { label: "Processing Time", value: "−40%" },
-        { label: "Independent Clearance", value: "+30% of Interns" },
+        { label: "Event", value: "PayPal AI Hackathon" },
+        { label: "Focus", value: "AI-Agent Security & Governance" },
+        { label: "Controls", value: "Spending & Authorization Policies" },
+        { label: "Status", value: "In Development" },
       ],
       overview: {
-        heading: "Clearance, without the paper trail.",
+        heading: "Trust before a transaction.",
         body: [
-          "Intern clearance was a manual, paper-based process that depended on chasing approvals in person.",
-          "I built online approval workflows with role-based dashboards using Next.js, Tailwind CSS, and TypeScript, enabling digital signatures, status tracking, and letter printing.",
+          "When an AI agent can initiate financial actions, its decisions need clear boundaries: what it is authorized to do, how much it can spend, and which actions must be blocked.",
+          "I'm building AgentTrust for the PayPal AI Hackathon to bring those boundaries into the execution workflow. The platform is designed to monitor agent-driven financial actions, enforce spending and authorization policies, and block unauthorized transactions before they execute.",
+        ],
+      },
+      features: {
+        heading: "What I'm building",
+        items: [
+          {
+            title: "Financial-action monitoring",
+            body: "Make the financial actions an AI agent attempts visible, so they can be evaluated against the permissions it has been given.",
+          },
+          {
+            title: "Spending & authorization policies",
+            body: "Check proposed actions against spending constraints and authorization rules before allowing execution.",
+          },
+          {
+            title: "Pre-execution enforcement",
+            body: "Block unauthorized transactions before they happen, making policy enforcement part of the action workflow.",
+          },
         ],
       },
       challenge: {
-        heading: "Making it self-serve.",
+        label: "In Development",
+        heading: "From agent decisions to authorized actions.",
         body: [
-          "Digitizing the workflow meant interns could see where their clearance stood and complete it without waiting on manual hand-offs.",
+          "The current focus is building and validating the workflow between an agent's proposed financial action, the policies that govern it, and the decision to allow or block execution.",
+          "AgentTrust is an active hackathon project. Implementation details and results will be added as the prototype develops.",
         ],
-        impact: {
-          label: "Measured impact",
-          value: "40%",
-          caption: "Reduction in clearance processing time.",
-          footnote: "30% more interns completed clearance independently",
-        },
       },
     },
   },
